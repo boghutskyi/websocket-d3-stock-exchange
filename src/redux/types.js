@@ -1,0 +1,7 @@
+export const ADD_STOCK = 'STOCK/ADD_STOCK'
+export const SHOW_STOCK = 'STOCK/SHOW_STOCK'
+export const DELETE_STOCK = 'STOCK/DELETE_STOCK'
+export const SHOW_LOADER = 'APP/SHOW_LOADER' 
+export const HIDE_LOADER = 'APP/HIDE_LOADER' 
+export const SHOW_ALERT = 'APP/SHOW_ALERT' 
+export const HIDE_ALERT = 'APP/HIDE_ALERT' 

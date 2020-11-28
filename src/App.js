@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useSelector } from 'react-redux';
+import { Alert } from './components/Alert';
+import { Graph } from './components/Graph'
+import SideMenu from './components/SideMenu'
+import './index.css'
 
 function App() {
+  const alert = useSelector(state => state.app.alert)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div>
+        <Graph />
+      </div>
+      <div>
+        <SideMenu />
+      </div>
+      {alert && <Alert alert={alert} />}
     </div>
   );
 }
