@@ -1,5 +1,7 @@
 export const ADD_STOCK = 'STOCK/ADD_STOCK'
 export const SHOW_STOCK = 'STOCK/SHOW_STOCK'
+export const UPDATE_STOCK = 'STOCK/UPDATE_STOCK'
+export const HIDE_STOCK = 'STOCK/HIDE_STOCK'
 export const DELETE_STOCK = 'STOCK/DELETE_STOCK'
 export const SHOW_LOADER = 'APP/SHOW_LOADER' 
 export const HIDE_LOADER = 'APP/HIDE_LOADER' 
